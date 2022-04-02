@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Memory Game!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Animal Memory Game!
+    </h1>
+    <p>
+      Welcome to my first memory game! Remember which order to press the buttons in to win!
+      Hit 'Start' when you're ready to play!
+    </p>
+    
+    <!-- create the start and end buttons -->
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      End
+    </button>
+    
+      <!-- assign each of the buttons with their corresponding numbers-->
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="playMyAudio(1)">
+        <img src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/22215dog_98826.png?v=1648238068947" id="Dog" width="200" height="200">
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="playMyAudio(2)">
+        <img src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/cat_109121.png?v=1648238061594" id="Cat" width="200" height="200">
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="playMyAudio(3)">
+        <img src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/22227horse_98801.png?v=1648238051148" id="Horse" width="200" height="200">
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="playMyAudio(4)">
+        <img src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/22236pig_98799.png?v=1648238058413" id="Pig" width="200" height="200">
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="playMyAudio(5)">
+        <img src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/458cow_100744.png?v=1648238064870" id="Cow" width="200" height="200">
+      </button>
+    </div>
+    
+    <!-- Add the audio for each of the buttons -->
+    <div>
+        <audio src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/MOO%20-%20Sound%20Effect.mp3?v=1648413745024" id="Audio5"></audio>
+        <audio src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/HORSE%20-%20Sound%20Effect.mp3?v=1648413741508" id="Audio3"></audio>
+        <audio src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/Pig%20Oink%20Sound%20Effect.mp3?v=1648414018082" id="Audio4"></audio>
+        <audio src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/Meow%20-%20Sound%20Effect.mp3?v=1648240175507" id="Audio2"></audio>
+        <audio src="https://cdn.glitch.global/f4262200-85a7-4b02-9059-20c7507ba5d2/Dog%20Bark%20Sound%20Effect%20HD%20%5BNo%20Copyright%5D.mp3?v=1648413737201" id="Audio1"></audio>
+    </div>
+    
+  </body>
+</html>
